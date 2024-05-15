@@ -1,0 +1,121 @@
+.forecast {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.daily_item {
+    box-sizing: border-box;
+    width: 60vw;
+    background-color: transparent;
+    border-radius: 10px;
+    height: 60px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px 30px;
+    color: white;
+    border: 1px solid gray;
+    justify-content: center;
+}
+
+.forecast .daily_item img {
+    width: 40px;
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+
+.day {
+    color: white;
+    flex: 1 1;
+    font-weight: 600;
+    margin-left: 15px;
+    padding: 10px 0px;
+}
+.description {
+    flex: 1 1;
+    margin-right: 20px;
+    text-align: right;
+    text-transform: capitalize;
+}
+
+.min_max {
+    color: gray;
+}
+.wrapper{
+    transition: all 1s ease;
+}
+
+.daily_details {
+  color: white;
+  grid-row-gap: 0;
+  grid-column-gap: 15px;
+  row-gap: 0;
+  column-gap: 15px;
+  display: grid;
+  flex: 1 1;
+  grid-template-columns: auto auto;
+  padding: 5px 20px;
+}
+.detials_item {
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+.detials_item label:first-child{
+    color: gray;
+}
+.detials_item label:last-child{
+    color: white;
+}
+
+@media (max-width: 820px){
+   .forecast{
+       width: 100%;
+       margin:auto;
+   }
+    .daily_item {
+        width: 80vw;
+        font-size: 18px;
+        padding: 8px 20px;
+    }
+    
+}
+
+@media (max-width: 600px){
+    .forecast{
+        width: 100%;
+        margin:auto;
+    }
+     .daily_item {
+         width: 95vw;
+         font-size: 18px;
+         padding: 8px 10px;
+     }
+     .forecast .daily_item img {
+         width: 35px;
+    }
+    
+    .day {        
+        font-weight: 500;
+        margin-left: 10px;
+    }
+    .description {        
+        text-align: center;
+        margin-right: 10px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .min_max {
+        font-size: 14px;
+    }
+     
+ }
+
